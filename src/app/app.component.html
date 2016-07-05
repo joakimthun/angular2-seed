@@ -1,0 +1,12 @@
+<nav id="nav-bar">
+  <div id="nav-container" class="nav-wrapper container">
+    <a [routerLink]="['/data']" class="brand-logo left">Angular 2 Seed</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/data']">Data</a></li>
+      <li [routerLinkActive]="['active']"><a [routerLink]="['/about']">About</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="page-container" class="container">
+  <router-outlet></router-outlet>
+</div>

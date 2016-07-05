@@ -1,0 +1,18 @@
+$page-width: 1200px;
+
+html, body {
+    background-color: white;
+}
+
+#nav-container {
+    max-width: $page-width;
+
+    ul {
+        margin-left: 280px;
+    }
+}
+
+#page-container {
+    max-width: $page-width;
+    padding-top: 64px;
+}
