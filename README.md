@@ -10,7 +10,8 @@ $ npm run serve
 # The application is now listening on localhost:8080 with livereload enabled
 
 # "Build" the application
-$ npm run build
+$ npm run build-dev
+$ npm run build-prod
 
 # The build output can be found in the dist folder
 ```
