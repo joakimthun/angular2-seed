@@ -1,18 +1,18 @@
-$page-width: 1200px;
+@import 'common/colors';
+@import 'common/common';
 
 html, body {
-    background-color: white;
+    background-color: $color-white;
 }
 
 #nav-container {
-    max-width: $page-width;
-
-    ul {
-        margin-left: 280px;
+    background: $color-primary;
+    
+    .navbar-brand {
+        color: black !important;
     }
-}
 
-#page-container {
-    max-width: $page-width;
-    padding-top: 64px;
+    a {
+        color: black !important;
+    }
 }

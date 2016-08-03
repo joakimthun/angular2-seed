@@ -1,15 +1,16 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
-import { DataComponent } from './data/data.component';
+import { StartComponent } from './start/start.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: RouterConfig = [
     {
         path: '',
-        component: DataComponent
+        redirectTo: 'start', 
+        pathMatch: 'full'
     },
     {
-        path: 'data',
-        component: DataComponent
+        path: 'start',
+        component: StartComponent
     },
     {
         path: 'about',

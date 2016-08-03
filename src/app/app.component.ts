@@ -1,21 +1,25 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
-import { DataComponent } from './data/data.component';
-import { AboutComponent } from './about/about.component';
+import { AppConfig } from './app.config';
 
-// Styles
-require('materialize-css/sass/materialize.scss');
+import { StartComponent } from './start/start.component';
+import { AboutComponent } from './about/about.component';
+import { ItemsService } from './start/items.service';
+
+require('bootstrap-sass/assets/stylesheets/_bootstrap.scss');
+require('loaders.css/src/loaders.scss');
 require('./app.component.scss');
 
 @Component({
-  selector: 'ng-app',
-  template: require('./app.component.html'),
-  directives: [ROUTER_DIRECTIVES],
-  precompile: [ 
-    DataComponent, 
-    AboutComponent 
-  ]
+    selector: 'ng-app',
+    template: require('./app.component.html'),
+    directives: [ ROUTER_DIRECTIVES ],
+    providers: [ ItemsService, AppConfig ],
+    precompile: [
+        StartComponent,
+        AboutComponent,
+    ]
 })
-
-export class AppComponent { }
+export class AppComponent {
+}

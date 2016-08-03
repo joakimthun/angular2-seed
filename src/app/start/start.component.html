@@ -1,0 +1,21 @@
+<div id="start-container" class="row">
+    <div class="jumbotron">
+        <h1>Start!</h1>
+        <p>This is the start page.</p>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="row" *ngFor="let item of items | take:numberOfItemsToLoad">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{item.title}}</h3>
+                </div>
+                <div class="panel-body">
+                    {{item.description}}
+                    <br />
+                    {{item.dateUtc |  formatdate}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
