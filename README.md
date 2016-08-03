@@ -11,6 +11,7 @@ $ npm run serve
 
 # "Build" the application
 $ npm run build-dev
+or
 $ npm run build-prod
 
 # The build output can be found in the dist folder
